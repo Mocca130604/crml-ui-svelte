@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import './primitive.css';
+@import './semantic.css';
+
+/* Global Reset & Font Standardization */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: var(--crml-font-sans, 'Inter', system-ui, sans-serif);
+}
+
+html, body {
+  font-family: var(--crml-font-sans, 'Inter', system-ui, sans-serif);
+  background-color: var(--crml-bg-base);
+  color: var(--crml-text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}

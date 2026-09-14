@@ -1,0 +1,106 @@
+/**
+ * CRML UI - Semantic Color Tokens (Neubrutalism & Y2K)
+ */
+
+:root, [data-theme="light"] {
+  /* --- Backgrounds --- */
+  --crml-bg-base: var(--crt-cloud);
+  --crml-bg-surface: var(--crt-pure-white);
+  --crml-bg-elevated: var(--crt-lavender);
+  
+  /* Backward compatibility aliases */
+  --crml-bg-app: var(--crml-bg-base);
+  --crml-bg-subtle: var(--crt-peach);
+
+  /* --- Text & Content --- */
+  --crml-text-main: var(--crt-obsidian);
+  --crml-text-primary: var(--crt-obsidian);
+  --crml-text-muted: var(--crt-neutral-dark-100);
+  --crml-text-secondary: var(--crt-neutral-dark-300);
+  --crml-text-inverse: var(--crt-cloud);
+  --crml-text-on-primary: var(--crt-obsidian);
+
+  /* --- Interactive & Action --- */
+  --crml-action-primary: var(--crt-electric-lime);
+  --crml-action-secondary: var(--crt-hot-pink);
+  --crml-action-accent: var(--crt-cyber-cyan);
+
+  /* Backward compatibility aliases */
+  --crml-action-primary-bg: var(--crt-electric-lime);
+  --crml-action-primary-bg-hover: var(--crt-lime-300);
+  --crml-action-primary-bg-active: var(--crt-lime-700);
+
+  --crml-action-secondary-bg: var(--crt-hot-pink);
+  --crml-action-secondary-bg-hover: var(--crt-pink-300);
+  --crml-action-secondary-text: var(--crt-pure-white);
+
+  /* --- Feedback / State --- */
+  --crml-feedback-success: var(--crt-electric-lime);
+  --crml-feedback-warning: var(--crt-sunburst-yellow);
+  --crml-feedback-error: var(--crt-hot-pink);
+
+  --crml-status-success-bg: var(--crt-lime-100);
+  --crml-status-success-text: var(--crt-obsidian);
+  --crml-status-warning-bg: var(--crt-yellow-100);
+  --crml-status-warning-text: var(--crt-obsidian);
+  --crml-status-danger-bg: var(--crt-pink-100);
+  --crml-status-danger-text: var(--crt-pink-900);
+
+  /* --- Borders & Lines --- */
+  --crml-border-main: var(--crt-obsidian);
+  --crml-border-subtle: var(--crt-obsidian-a10);
+  --crml-border-medium: var(--crt-obsidian);
+  --crml-border-focus: var(--crt-hot-pink);
+  --crml-shadow-theme: var(--crml-shadow-brutal);
+}
+
+[data-theme="dark"] {
+  /* --- Backgrounds --- */
+  --crml-bg-base: var(--crt-obsidian);
+  --crml-bg-surface: var(--crt-smoke);
+  --crml-bg-elevated: var(--crt-pink-900);
+
+  /* Backward compatibility aliases */
+  --crml-bg-app: var(--crml-bg-base);
+  --crml-bg-subtle: var(--crt-neutral-dark-700);
+
+  /* --- Text & Content --- */
+  --crml-text-main: var(--crt-cloud);
+  --crml-text-primary: var(--crt-cloud);
+  --crml-text-muted: var(--crt-neutral-dark-100);
+  --crml-text-secondary: var(--crt-neutral-light-700);
+  --crml-text-inverse: var(--crt-obsidian);
+  --crml-text-on-primary: var(--crt-obsidian);
+
+  /* --- Interactive & Action --- */
+  --crml-action-primary: var(--crt-electric-lime);
+  --crml-action-secondary: var(--crt-hot-pink);
+  --crml-action-accent: var(--crt-cyber-cyan);
+
+  --crml-action-primary-bg: var(--crt-electric-lime);
+  --crml-action-primary-bg-hover: var(--crt-lime-300);
+  --crml-action-primary-bg-active: var(--crt-lime-700);
+
+  --crml-action-secondary-bg: var(--crt-hot-pink);
+  --crml-action-secondary-bg-hover: var(--crt-pink-300);
+  --crml-action-secondary-text: var(--crt-pure-white);
+
+  /* --- Feedback / State --- */
+  --crml-feedback-success: var(--crt-electric-lime);
+  --crml-feedback-warning: var(--crt-sunburst-yellow);
+  --crml-feedback-error: var(--crt-hot-pink);
+
+  --crml-status-success-bg: rgba(204, 255, 0, 0.2);
+  --crml-status-success-text: var(--crt-electric-lime);
+  --crml-status-warning-bg: rgba(255, 214, 0, 0.2);
+  --crml-status-warning-text: var(--crt-sunburst-yellow);
+  --crml-status-danger-bg: rgba(255, 0, 127, 0.2);
+  --crml-status-danger-text: var(--crt-pink-300);
+
+  /* --- Borders & Lines --- */
+  --crml-border-main: var(--crt-cloud);
+  --crml-border-subtle: rgba(255, 255, 255, 0.15);
+  --crml-border-medium: var(--crt-cloud);
+  --crml-border-focus: var(--crt-cyber-cyan);
+  --crml-shadow-theme: 4px 4px 0px var(--crt-cloud);
+}
