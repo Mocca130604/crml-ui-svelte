@@ -7,6 +7,9 @@
   --crml-bg-base: var(--crt-cloud);
   --crml-bg-surface: var(--crt-pure-white);
   --crml-bg-elevated: var(--crt-lavender);
+  --crml-bg-input: var(--crt-pure-white);
+  --crml-bg-popover: var(--crt-pure-white);
+  --crml-bg-card-alt: #f9f9f9;
   
   /* Backward compatibility aliases */
   --crml-bg-app: var(--crml-bg-base);
@@ -19,6 +22,7 @@
   --crml-text-secondary: var(--crt-neutral-dark-300);
   --crml-text-inverse: var(--crt-cloud);
   --crml-text-on-primary: var(--crt-obsidian);
+  --crml-text-on-accent: var(--crt-obsidian);
 
   /* --- Interactive & Action --- */
   --crml-action-primary: var(--crt-electric-lime);
@@ -51,26 +55,36 @@
   --crml-border-subtle: var(--crt-obsidian-a10);
   --crml-border-medium: var(--crt-obsidian);
   --crml-border-focus: var(--crt-hot-pink);
+  --crml-border-ink: var(--crt-obsidian);
+  --crml-shadow-ink: var(--crt-obsidian);
   --crml-shadow-theme: var(--crml-shadow-brutal);
 }
 
-[data-theme="dark"] {
+:root[data-theme="dark"], [data-theme="dark"], .dark-mode, .dark, html.dark-mode {
   /* --- Backgrounds --- */
-  --crml-bg-base: var(--crt-obsidian);
-  --crml-bg-surface: var(--crt-smoke);
-  --crml-bg-elevated: var(--crt-pink-900);
+  --crml-bg-base: #0D0D0D;
+  --crml-bg-surface: #181818;
+  --crml-bg-elevated: #242424;
+  --crml-bg-input: #1E1E1E;
+  --crml-bg-popover: #1C1C1C;
+  --crml-bg-card-alt: #202020;
 
   /* Backward compatibility aliases */
   --crml-bg-app: var(--crml-bg-base);
-  --crml-bg-subtle: var(--crt-neutral-dark-700);
+  --crml-bg-subtle: #1E1E1E;
 
-  /* --- Text & Content --- */
-  --crml-text-main: var(--crt-cloud);
-  --crml-text-primary: var(--crt-cloud);
-  --crml-text-muted: var(--crt-neutral-dark-100);
-  --crml-text-secondary: var(--crt-neutral-light-700);
+  /* --- Text & Content (High-Contrast Dark Mode) --- */
+  --crml-text-main: #F4F4F5;
+  --crml-text-primary: #F4F4F5;
+  --crml-text-muted: #B3B3B3;
+  --crml-text-secondary: #D4D4D8;
   --crml-text-inverse: var(--crt-obsidian);
   --crml-text-on-primary: var(--crt-obsidian);
+  --crml-text-on-accent: var(--crt-obsidian);
+  --crml-text-on-lime: #0D0D0D;
+  --crml-text-on-cyan: #0D0D0D;
+  --crml-text-on-yellow: #0D0D0D;
+  --crml-text-on-pink: #FFFFFF;
 
   /* --- Interactive & Action --- */
   --crml-action-primary: var(--crt-electric-lime);
@@ -90,17 +104,25 @@
   --crml-feedback-warning: var(--crt-sunburst-yellow);
   --crml-feedback-error: var(--crt-hot-pink);
 
-  --crml-status-success-bg: rgba(204, 255, 0, 0.2);
+  --crml-status-success-bg: rgba(204, 255, 0, 0.15);
   --crml-status-success-text: var(--crt-electric-lime);
-  --crml-status-warning-bg: rgba(255, 214, 0, 0.2);
+  --crml-status-warning-bg: rgba(255, 214, 0, 0.15);
   --crml-status-warning-text: var(--crt-sunburst-yellow);
-  --crml-status-danger-bg: rgba(255, 0, 127, 0.2);
+  --crml-status-danger-bg: rgba(255, 0, 127, 0.15);
   --crml-status-danger-text: var(--crt-pink-300);
 
   /* --- Borders & Lines --- */
-  --crml-border-main: var(--crt-cloud);
+  --crml-border-main: rgba(255, 255, 255, 0.3);
   --crml-border-subtle: rgba(255, 255, 255, 0.15);
-  --crml-border-medium: var(--crt-cloud);
+  --crml-border-medium: rgba(255, 255, 255, 0.3);
   --crml-border-focus: var(--crt-cyber-cyan);
-  --crml-shadow-theme: 4px 4px 0px var(--crt-cloud);
+  --crml-border-ink: rgba(255, 255, 255, 0.28);
+  --crml-shadow-ink: #000000;
+  --crml-shadow-theme: 4px 4px 0px #000000;
+
+  /* --- Neubrutalism Overrides for Dark --- */
+  --crml-border-brutal: 3px solid rgba(255, 255, 255, 0.28);
+  --crml-shadow-brutal: 4px 4px 0px #000000;
+  --crml-shadow-brutal-sm: 2px 2px 0px #000000;
+  --crml-shadow-brutal-lg: 6px 6px 0px #000000;
 }

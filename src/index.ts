@@ -5,6 +5,7 @@ export { default as CrmlBouncyButton } from './components/atoms/CrmlBouncyButton
 export { default as CrmlButton } from './components/atoms/CrmlButton.svelte'
 export { default as CrmlCheckbox } from './components/atoms/CrmlCheckbox.svelte'
 export { default as CrmlDivider } from './components/atoms/CrmlDivider.svelte'
+export { default as CrmlIcon } from './components/atoms/CrmlIcon.svelte'
 export { default as CrmlInput } from './components/atoms/CrmlInput.svelte'
 export { default as CrmlKbd } from './components/atoms/CrmlKbd.svelte'
 export { default as CrmlMarquee } from './components/atoms/CrmlMarquee.svelte'
