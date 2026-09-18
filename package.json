@@ -1,6 +1,6 @@
 {
   "name": "crml-ui-svelte",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "type": "module",
   "description": "Tactile Neubrutalism & Cyber Mecha Design System for Svelte 5",
   "main": "./dist/crml-ui-svelte.umd.cjs",

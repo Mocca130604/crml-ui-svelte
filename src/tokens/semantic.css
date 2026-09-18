@@ -1,5 +1,6 @@
 /**
  * CRML UI - Semantic Color Tokens (Neubrutalism & Y2K)
+ * v2.0.3 — Ryo Yamada Blue as primary, Lime retained as variant
  */
 
 :root, [data-theme="light"] {
@@ -10,7 +11,7 @@
   --crml-bg-input: var(--crt-pure-white);
   --crml-bg-popover: var(--crt-pure-white);
   --crml-bg-card-alt: #f9f9f9;
-  
+
   /* Backward compatibility aliases */
   --crml-bg-app: var(--crml-bg-base);
   --crml-bg-subtle: var(--crt-peach);
@@ -21,27 +22,37 @@
   --crml-text-muted: var(--crt-neutral-dark-100);
   --crml-text-secondary: var(--crt-neutral-dark-300);
   --crml-text-inverse: var(--crt-cloud);
-  --crml-text-on-primary: var(--crt-obsidian);
+  --crml-text-on-primary: #FFFFFF;
   --crml-text-on-accent: var(--crt-obsidian);
+  --crml-text-on-lime: var(--crt-obsidian);
+  --crml-text-on-cyan: var(--crt-obsidian);
+  --crml-text-on-yellow: var(--crt-obsidian);
+  --crml-text-on-pink: #FFFFFF;
+  --crml-text-on-ryo-blue: #FFFFFF;
 
-  /* --- Interactive & Action --- */
-  --crml-action-primary: var(--crt-electric-lime);
+  /* --- Interactive & Action (Ryo Blue Primary) --- */
+  --crml-action-primary: var(--crt-ryo-blue);
+  --crml-action-primary-bg: var(--crt-ryo-blue);
+  --crml-action-primary-bg-hover: var(--crt-ryo-blue-bright);
+  --crml-action-primary-bg-active: var(--crt-ryo-blue-deep);
+
   --crml-action-secondary: var(--crt-hot-pink);
-  --crml-action-accent: var(--crt-cyber-cyan);
-
-  /* Backward compatibility aliases */
-  --crml-action-primary-bg: var(--crt-electric-lime);
-  --crml-action-primary-bg-hover: var(--crt-lime-300);
-  --crml-action-primary-bg-active: var(--crt-lime-700);
-
   --crml-action-secondary-bg: var(--crt-hot-pink);
   --crml-action-secondary-bg-hover: var(--crt-pink-300);
   --crml-action-secondary-text: var(--crt-pure-white);
+
+  --crml-action-accent: var(--crt-cyber-cyan);
+
+  /* Lime — retained as secondary/variant option */
+  --crml-action-lime: var(--crt-electric-lime);
+  --crml-action-lime-hover: var(--crt-lime-300);
+  --crml-action-lime-active: var(--crt-lime-700);
 
   /* --- Feedback / State --- */
   --crml-feedback-success: var(--crt-electric-lime);
   --crml-feedback-warning: var(--crt-sunburst-yellow);
   --crml-feedback-error: var(--crt-hot-pink);
+  --crml-feedback-info: var(--crt-ryo-blue);
 
   --crml-status-success-bg: var(--crt-lime-100);
   --crml-status-success-text: var(--crt-obsidian);
@@ -49,79 +60,90 @@
   --crml-status-warning-text: var(--crt-obsidian);
   --crml-status-danger-bg: var(--crt-pink-100);
   --crml-status-danger-text: var(--crt-pink-900);
+  --crml-status-info-bg: var(--crt-ryo-blue-100);
+  --crml-status-info-text: var(--crt-ryo-blue-700);
 
   /* --- Borders & Lines --- */
   --crml-border-main: var(--crt-obsidian);
   --crml-border-subtle: var(--crt-obsidian-a10);
   --crml-border-medium: var(--crt-obsidian);
-  --crml-border-focus: var(--crt-hot-pink);
+  --crml-border-focus: var(--crt-ryo-blue);
   --crml-border-ink: var(--crt-obsidian);
   --crml-shadow-ink: var(--crt-obsidian);
   --crml-shadow-theme: var(--crml-shadow-brutal);
 }
 
 :root[data-theme="dark"], [data-theme="dark"], .dark-mode, .dark, html.dark-mode {
-  /* --- Backgrounds --- */
-  --crml-bg-base: #0D0D0D;
-  --crml-bg-surface: #181818;
-  --crml-bg-elevated: #242424;
-  --crml-bg-input: #1E1E1E;
-  --crml-bg-popover: #1C1C1C;
-  --crml-bg-card-alt: #202020;
+  /* --- Backgrounds (Midnight Navy) --- */
+  --crml-bg-base: var(--crt-midnight-900);
+  --crml-bg-surface: var(--crt-midnight-800);
+  --crml-bg-elevated: var(--crt-midnight-700);
+  --crml-bg-input: var(--crt-midnight-600);
+  --crml-bg-popover: var(--crt-midnight-500);
+  --crml-bg-card-alt: var(--crt-midnight-400);
 
   /* Backward compatibility aliases */
   --crml-bg-app: var(--crml-bg-base);
-  --crml-bg-subtle: #1E1E1E;
+  --crml-bg-subtle: var(--crt-midnight-600);
 
   /* --- Text & Content (High-Contrast Dark Mode) --- */
-  --crml-text-main: #F4F4F5;
-  --crml-text-primary: #F4F4F5;
-  --crml-text-muted: #B3B3B3;
-  --crml-text-secondary: #D4D4D8;
+  --crml-text-main: #F0F4FF;
+  --crml-text-primary: #F0F4FF;
+  --crml-text-muted: #8899BB;
+  --crml-text-secondary: #B8C8E8;
   --crml-text-inverse: var(--crt-obsidian);
-  --crml-text-on-primary: var(--crt-obsidian);
+  --crml-text-on-primary: #FFFFFF;
   --crml-text-on-accent: var(--crt-obsidian);
   --crml-text-on-lime: #0D0D0D;
   --crml-text-on-cyan: #0D0D0D;
   --crml-text-on-yellow: #0D0D0D;
   --crml-text-on-pink: #FFFFFF;
+  --crml-text-on-ryo-blue: #FFFFFF;
 
-  /* --- Interactive & Action --- */
-  --crml-action-primary: var(--crt-electric-lime);
+  /* --- Interactive & Action (Ryo Blue brighter in dark mode) --- */
+  --crml-action-primary: var(--crt-ryo-blue-bright);
+  --crml-action-primary-bg: var(--crt-ryo-blue-bright);
+  --crml-action-primary-bg-hover: var(--crt-ryo-blue);
+  --crml-action-primary-bg-active: var(--crt-ryo-blue-deep);
+
   --crml-action-secondary: var(--crt-hot-pink);
-  --crml-action-accent: var(--crt-cyber-cyan);
-
-  --crml-action-primary-bg: var(--crt-electric-lime);
-  --crml-action-primary-bg-hover: var(--crt-lime-300);
-  --crml-action-primary-bg-active: var(--crt-lime-700);
-
   --crml-action-secondary-bg: var(--crt-hot-pink);
   --crml-action-secondary-bg-hover: var(--crt-pink-300);
   --crml-action-secondary-text: var(--crt-pure-white);
+
+  --crml-action-accent: var(--crt-cyber-cyan);
+
+  /* Lime retained as variant */
+  --crml-action-lime: var(--crt-electric-lime);
+  --crml-action-lime-hover: var(--crt-lime-300);
+  --crml-action-lime-active: var(--crt-lime-700);
 
   /* --- Feedback / State --- */
   --crml-feedback-success: var(--crt-electric-lime);
   --crml-feedback-warning: var(--crt-sunburst-yellow);
   --crml-feedback-error: var(--crt-hot-pink);
+  --crml-feedback-info: var(--crt-ryo-blue-bright);
 
-  --crml-status-success-bg: rgba(204, 255, 0, 0.15);
+  --crml-status-success-bg: rgba(204, 255, 0, 0.12);
   --crml-status-success-text: var(--crt-electric-lime);
-  --crml-status-warning-bg: rgba(255, 214, 0, 0.15);
+  --crml-status-warning-bg: rgba(255, 214, 0, 0.12);
   --crml-status-warning-text: var(--crt-sunburst-yellow);
-  --crml-status-danger-bg: rgba(255, 0, 127, 0.15);
+  --crml-status-danger-bg: rgba(255, 0, 127, 0.12);
   --crml-status-danger-text: var(--crt-pink-300);
+  --crml-status-info-bg: rgba(77, 148, 255, 0.15);
+  --crml-status-info-text: var(--crt-ryo-blue-bright);
 
   /* --- Borders & Lines --- */
-  --crml-border-main: rgba(255, 255, 255, 0.3);
-  --crml-border-subtle: rgba(255, 255, 255, 0.15);
-  --crml-border-medium: rgba(255, 255, 255, 0.3);
-  --crml-border-focus: var(--crt-cyber-cyan);
-  --crml-border-ink: rgba(255, 255, 255, 0.28);
+  --crml-border-main: rgba(77, 148, 255, 0.25);
+  --crml-border-subtle: rgba(77, 148, 255, 0.1);
+  --crml-border-medium: rgba(77, 148, 255, 0.25);
+  --crml-border-focus: var(--crt-ryo-blue-bright);
+  --crml-border-ink: rgba(255, 255, 255, 0.2);
   --crml-shadow-ink: #000000;
   --crml-shadow-theme: 4px 4px 0px #000000;
 
   /* --- Neubrutalism Overrides for Dark --- */
-  --crml-border-brutal: 3px solid rgba(255, 255, 255, 0.28);
+  --crml-border-brutal: 3px solid rgba(255, 255, 255, 0.2);
   --crml-shadow-brutal: 4px 4px 0px #000000;
   --crml-shadow-brutal-sm: 2px 2px 0px #000000;
   --crml-shadow-brutal-lg: 6px 6px 0px #000000;

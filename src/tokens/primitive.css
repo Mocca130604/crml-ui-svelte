@@ -2,6 +2,7 @@
 
 /**
  * CRML UI - Y2K / Neubrutalism Primitive Color Tokens
+ * v2.0.3 — Ryo Yamada Blue theme
  */
 
 :root {
@@ -10,6 +11,11 @@
   --crt-hot-pink: #FF007F;
   --crt-cyber-cyan: #00F0FF;
   --crt-sunburst-yellow: #FFD600;
+
+  /* --- Ryo Yamada Blue (Primary Theme) --- */
+  --crt-ryo-blue: #1B6FFF;
+  --crt-ryo-blue-bright: #4D94FF;
+  --crt-ryo-blue-deep: #0A3DB5;
 
   /* --- Pastels / Soft --- */
   --crt-lavender: #E0C3FC;
@@ -22,9 +28,22 @@
   --crt-cloud: #F4F4F0;
   --crt-pure-white: #FFFFFF;
 
-  /* --- Shades & Tints Scale (100–900) --- */
+  /* --- Midnight Navy (Dark Mode Surfaces) --- */
+  --crt-midnight-900: #080C14;
+  --crt-midnight-800: #0F1624;
+  --crt-midnight-700: #162133;
+  --crt-midnight-600: #111929;
+  --crt-midnight-500: #0D1526;
+  --crt-midnight-400: #0F1A2E;
 
-  /* Lime (Electric) */
+  /* --- Ryo Blue Scale (100–900) --- */
+  --crt-ryo-blue-100: #D6E8FF;
+  --crt-ryo-blue-300: #85BBFF;
+  --crt-ryo-blue-500: #1B6FFF;
+  --crt-ryo-blue-700: #0A3DB5;
+  --crt-ryo-blue-900: #061E5E;
+
+  /* --- Lime (Electric) Scale --- */
   --crt-lime-100: #F3FFB3;
   --crt-lime-300: #E2FF66;
   --crt-lime-500: #CCFF00;
@@ -86,6 +105,7 @@
   --crt-obsidian-a80: rgba(13, 13, 13, 0.8);
   --crt-lime-glow: rgba(204, 255, 0, 0.6);
   --crt-pink-glow: rgba(255, 0, 127, 0.6);
+  --crt-ryo-blue-glow: rgba(27, 111, 255, 0.5);
   --crt-pure-white-a80: rgba(255, 255, 255, 0.8);
 
   /* --- Gradient Tokens --- */
@@ -93,6 +113,8 @@
   --grad-cyber-pop: linear-gradient(90deg, #00F0FF 0%, #E0C3FC 100%);
   --grad-lime-acid: linear-gradient(45deg, #CCFF00 0%, #00F0FF 100%);
   --grad-dark-mesh: linear-gradient(180deg, #262626 0%, #0D0D0D 100%);
+  --grad-ryo-cyber: linear-gradient(135deg, #1B6FFF 0%, #00F0FF 100%);
+  --grad-ryo-deep: linear-gradient(180deg, #0F1624 0%, #080C14 100%);
 
   /* --- Neubrutalism Global Design Tokens --- */
   --crml-border-width: 3px;
